@@ -24,7 +24,8 @@ namespace MakerLight
         /// <summary>
         /// 关于页面
         /// </summary>
-        AboutUserControl auc;
+        private AboutUserControl auc;
+        private CatalogUserControl cuc;
         public MainWindow()
         {
             InitializeComponent();
@@ -32,8 +33,13 @@ namespace MakerLight
             Width = SystemParameters.WorkArea.Width * 0.8;
             Height = SystemParameters.WorkArea.Height * 0.8;
 
-            auc = new AboutUserControl();
+            auc = new AboutUserControl(this);
+            cuc = new CatalogUserControl(this);
             gMain.Children.Add(auc);
+        }
+        public void ToCatalogUserControl() {
+            gMain.Children.Clear();
+            gMain.Children.Add(cuc);
         }
     }
 }

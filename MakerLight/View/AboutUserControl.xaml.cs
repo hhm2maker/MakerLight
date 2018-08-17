@@ -21,19 +21,16 @@ namespace MakerLight.View
     /// </summary>
     public partial class AboutUserControl : UserControl
     {
-        public AboutUserControl()
+        MainWindow mw;
+        public AboutUserControl(MainWindow mw)
         {
             InitializeComponent();
+            this.mw = mw;
         }
 
-        private void Button_MouseEnter(object sender, MouseEventArgs e)
+        private void ToCatalogUserControl(object sender, RoutedEventArgs e)
         {
-            var btn = (Button)sender;
-            btn.IsEnabled = false;
-            var ani = new ColorAnimation(Color.FromRgb(255, 0, 0), new Duration(TimeSpan.FromSeconds(2)));
-            ani.Completed += (s, a) => btn.IsEnabled = true;
-            btn.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
-            btn.Background.BeginAnimation(SolidColorBrush.ColorProperty, ani);
+            mw.ToCatalogUserControl();
         }
     }
 }

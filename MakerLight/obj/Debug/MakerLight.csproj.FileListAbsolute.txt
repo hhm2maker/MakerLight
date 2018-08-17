@@ -15,3 +15,5 @@ E:\MakerLight\MakerLight\obj\Debug\MakerLight.csproj.CoreCompileInputs.cache
 E:\MakerLight\MakerLight\obj\Debug\MakerLight.exe
 E:\MakerLight\MakerLight\obj\Debug\MakerLight.pdb
 E:\MakerLight\MakerLight\obj\Debug\MakerLight.csprojResolveAssemblyReference.cache
+E:\MakerLight\MakerLight\obj\Debug\View\CatalogUserControl.g.cs
+E:\MakerLight\MakerLight\obj\Debug\View\CatalogUserControl.baml
